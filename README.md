@@ -7,3 +7,6 @@
  ILI9341 TFT LCD display (240x320) [https://a.aliexpress.com/_mOislNx]
  
  D1 mini ESP32 [https://a.aliexpress.com/_mPMzAJ3]
+ 
+ # Wiring
+ 
