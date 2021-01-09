@@ -12,11 +12,11 @@
  # Wiring
   - BME280: 
  
-   VIN->VCC, GND->GND, SCL->GPIO22, SDA->GPIO21
+      VIN->VCC, GND->GND, SCL->GPIO22, SDA->GPIO21
  
   - Display: 
    
-   GND->GND, VCC->3.3V, CLK->GPIO18, MOSI->GPIO23, RES->GPIO04, DC->GPIO02, MISO->GPIO19, CS->GPIO26
+      GND->GND, VCC->3.3V, CLK->GPIO18, MOSI->GPIO23, RES->GPIO04, DC->GPIO02, MISO->GPIO19, CS->GPIO26
  
   # Software requirements
   Directly from Arduino IDE you can install these library: ArduinoJson, Adafruit_BME280 and TFT_eSPI. You will also need "upng" library [https://github.com/elanthis/upng].     Just simply put it to your project folder. 
