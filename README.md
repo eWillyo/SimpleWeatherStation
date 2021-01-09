@@ -19,7 +19,7 @@
       GND->GND, VCC->3.3V, CLK->GPIO18, MOSI->GPIO23, RES->GPIO04, DC->GPIO02, MISO->GPIO19, CS->GPIO26
  
   # Software requirements
-  Directly from Arduino IDE you can install these library: ArduinoJson, Adafruit_BME280 and TFT_eSPI. You will also need "upng" library [https://github.com/elanthis/upng].     Just simply put it to your project folder. 
+  Directly from Arduino IDE you can install these libraries: ArduinoJson, Adafruit_BME280 and TFT_eSPI. You will also need "upng" library [https://github.com/elanthis/upng].     Just simply put it to your project folder. 
   
   Then, open Arduino IDE, File->Preferences and copy Sketchbook location to your file explorer. In it open "libraries" folder and find "TFT_eSPI" folder. In it edit "User_Setup.h" file as follows:
   
