@@ -10,11 +10,11 @@
  - D1 mini ESP32 [https://a.aliexpress.com/_mPMzAJ3]
  
  # Wiring
-  # BME280: 
+  - BME280: 
  
    VIN->VCC, GND->GND, SCL->GPIO22, SDA->GPIO21
  
-  # Display: 
+  - Display: 
    
    GND->GND, VCC->3.3V, CLK->GPIO18, MOSI->GPIO23, RES->GPIO04, DC->GPIO02, MISO->GPIO19, CS->GPIO26
  
