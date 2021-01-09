@@ -3,7 +3,7 @@
  Simple weather station based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display. Weather station displays around 18 current weather values (like temperature, humidity, air pressure, wind speed and direction, UV index, ...) plus actual weather icon.
  
  # Hardware requirements
- - BME280 sensor (5 volt version) [https://a.aliexpress.com/_msziJ2z]
+ - BME280 sensor (5 volts version) [https://a.aliexpress.com/_msziJ2z]
  
  - ILI9341 TFT LCD display (240x320, 2.4", module) [https://a.aliexpress.com/_mOislNx]
  
