@@ -1,5 +1,5 @@
 # SimpleWeatherStation
- Simple weather station based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display.
+ Simple weather station based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display. Weather station displays 18 current values plus actual weather icon.
  
  # Hardware requirements
  BME280 sensor (5 volt version) [https://a.aliexpress.com/_msziJ2z]
