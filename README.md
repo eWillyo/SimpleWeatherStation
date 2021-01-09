@@ -1,13 +1,13 @@
 # SimpleWeatherStation
 
- Simple weather station based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display. Weather station displays 18 current weather values (like temperature, humidity, air pressure, wind speed and direction, ...) plus actual weather icon.
+ Simple weather station based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display. Weather station displays around 18 current weather values (like temperature, humidity, air pressure, wind speed and direction, UV index, ...) plus actual weather icon.
  
  # Hardware requirements
- BME280 sensor (5 volt version) [https://a.aliexpress.com/_msziJ2z]
+ - BME280 sensor (5 volt version) [https://a.aliexpress.com/_msziJ2z]
  
- ILI9341 TFT LCD display (240x320, 2.4", module) [https://a.aliexpress.com/_mOislNx]
+ - ILI9341 TFT LCD display (240x320, 2.4", module) [https://a.aliexpress.com/_mOislNx]
  
- D1 mini ESP32 [https://a.aliexpress.com/_mPMzAJ3]
+ - D1 mini ESP32 [https://a.aliexpress.com/_mPMzAJ3]
  
  # Wiring
  BME280: VIN->VCC, GND->GND, SCL->GPIO22, SDA->GPIO21
@@ -17,7 +17,7 @@
   # Software requirements
   Directly from Arduino IDE you can install these library: ArduinoJson, Adafruit_BME280 and TFT_eSPI. You will also need "upng" library [https://github.com/elanthis/upng].     Just simply put it to your project folder. 
   
-  Then, open Arduino IDE, File->properties and copy project location to your file explorer. In it open "libraries" folder and find   "TFT_eSPI" folder. In it edit "User_Setup.h" as follows:
+  Then, open Arduino IDE, File->Preferences and copy Sketchbook location to your file explorer. In it open "libraries" folder and find "TFT_eSPI" folder. In it edit "User_Setup.h" as follows:
   
           // ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR ESP32 SETUP   ######
 
