@@ -36,7 +36,7 @@
           //#define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
   
 # Fonts
-For this project I've created "Consolas_24" and "PhagsPa_18" fonts with support for Czech diacritic in corresponding *.h files. You can also create your own font suitable for this kind of display(ILI9341), just follow this [https://pages.uoregon.edu/park/Processing/process5.html] tutorial. Then new *.VLW font file convert to HEX format here: [https://tomeko.net/online_tools/file_to_hex.php?lang=en] and put it in header file in your project folder like this:
+For this project I've created "Consolas_24" and "PhagsPa_18" fonts with support for Czech diacritic in corresponding *.h files. You can also create your own font suitable for this kind of display (ILI9341), just follow this [https://pages.uoregon.edu/park/Processing/process5.html] tutorial. Then new *.VLW font file convert to HEX format here: [https://tomeko.net/online_tools/file_to_hex.php?lang=en] and put it in header file in your project folder like this:
 
           #include <pgmspace.h>
           const uint8_t  fontName[] PROGMEM = {
