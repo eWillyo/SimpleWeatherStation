@@ -21,7 +21,7 @@
   # Software requirements
   Directly from Arduino IDE you can install these libraries: ArduinoJson, Adafruit_BME280 and TFT_eSPI. You will also need "upng" library [https://github.com/elanthis/upng].     Just simply put it to your project folder. 
   
-  Then, open Arduino IDE, choose File->Preferences menu and copy Sketchbook location to your file explorer. In it open "libraries" folder and find "TFT_eSPI" folder. In it edit "User_Setup.h" file as follows:
+  Then, open Arduino IDE, choose File->Preferences menu and copy Sketchbook location to your file explorer. In it open "libraries" folder and find "TFT_eSPI" folder. Edit "User_Setup.h" file as follows:
   
           // Only define one driver, the other ones must be commented out
           #define ILI9341_DRIVER
