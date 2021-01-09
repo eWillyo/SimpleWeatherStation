@@ -15,8 +15,7 @@
  
   # Software requirements
   Directly from Arduino IDE you can install these library: ArduinoJson, Adafruit_BME280 and TFT_eSPI. You will also need "upng" library [https://github.com/elanthis/upng].     
-  Just simply put it to your project folder. Then, open Arduino IDE, File->properties and copy project location to your file explorer. In it open "libraries" folder and find   
-  "TFT_eSPI" folder. In it edit "User_Setup.h" as follows:
+  Just simply put it to your project folder. Then, open Arduino IDE, File->properties and copy project location to your file explorer. In it open "libraries" folder and find   "TFT_eSPI" folder. In it edit "User_Setup.h" as follows:
   
   *********************************
   
