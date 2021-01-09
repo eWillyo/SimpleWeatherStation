@@ -1,7 +1,5 @@
 # SimpleWeatherStation
 
-![Weather station](https://github.com/eWillyo/SimpleWeatherStation/blob/main/weather_station.jpeg?raw=true)
-
  Simple weather station based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display. Weather station displays 18 current weather values (like temperature, humidity, pressure, wind speed and direction, ...) plus actual weather icon.
  
  # Hardware requirements
@@ -45,3 +43,5 @@ Finally, don't forget to include this file in your project.
   
 # Installation
 Open this project in Arduino IDE and don't forget to change your board to "ESP32 Dev Module" and also set correct COM port. You will probably need to change Partition scheme to "No OTA (2MB APP/2MB SPIFFS)", then change latitude and longitude to your city coordinates. Change "place" variable to name of your city. You will also need API key from [https://openweathermap.org] (don't worry, registration is FREE with limitation of 1000 requests per day). Also don't forget to change your WiFi SSID and password (variables: "ssid" and "password"). Then try to upload code to ESP32. And that's it, enjoy!
+
+![Weather station](https://github.com/eWillyo/SimpleWeatherStation/blob/main/weather_station.jpeg?raw=true)
