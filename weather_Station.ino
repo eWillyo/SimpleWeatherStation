@@ -4,11 +4,6 @@
 #include <time.h>
 #include "upng.h"
 // sensor
-//#include <DHT.h>
-
-//#define pinDHT 22
-//DHT dht(pinDHT, DHT22);
-
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
