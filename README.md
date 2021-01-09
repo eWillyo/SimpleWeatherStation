@@ -23,6 +23,11 @@
   
   Then, open Arduino IDE, File->Preferences and copy Sketchbook location to your file explorer. In it open "libraries" folder and find "TFT_eSPI" folder. In it edit "User_Setup.h" as follows:
   
+          // Only define one driver, the other ones must be commented out
+          #define ILI9341_DRIVER
+          //#define ST7735_DRIVER      // Define additional parameters below for this display
+          ...
+  
           // ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR ESP32 SETUP   ######
 
           // For ESP32 Dev board (only tested with ILI9341 display)
@@ -34,6 +39,7 @@
           #define TFT_DC    2  // Data Command control pin
           #define TFT_RST   4  // Reset pin (could connect to RST pin)
           //#define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
+          ...
   
 # Fonts
 For this project I've created "Consolas_24" and "PhagsPa_18" fonts with support for Czech diacritic in corresponding *.h files. You can also create your own font suitable for this kind of display (ILI9341), just follow this [https://pages.uoregon.edu/park/Processing/process5.html] tutorial. Then new *.VLW font file convert to HEX format here: [https://tomeko.net/online_tools/file_to_hex.php?lang=en] and put it in header file in your project folder like this:
