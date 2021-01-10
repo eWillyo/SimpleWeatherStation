@@ -33,9 +33,9 @@ TFT_eSprite weather_img = TFT_eSprite(&tft);
 #define BCK_COLOR TFT_OLIVE
 
 // edit this !!!
-float latitude = 49.010193;  // your city latitude!
-float longitude = 17.122532; // your city longitude!
-String place = "your-city";
+float latitude = 39.010193;  // your city latitude!
+float longitude = 27.122532; // your city longitude!
+String place = "your-city-name";
 String openWeatherMapAPIKey = "your-open-weather-map-api-key";
 // edit this !!!
 
