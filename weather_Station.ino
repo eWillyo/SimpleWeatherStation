@@ -71,7 +71,6 @@ int rain_1h=0;
 //int rain_3h=0;
 int snow_1h=0;
 //int snow_3h=0;
-//String place;
 String war_event;
 String war_desc_split[2];
 time_t war_start_utc;
@@ -188,8 +187,6 @@ String httpGETRequest(const char* serverName) {
 
 JsonObject parseJsonDoc(String doc)
 {
-  //DynamicJsonDocument document(2500);
-  //StaticJsonDocument<900> document; // !!!
   JsonObject obj;
   
   auto error = deserializeJson(weatherJsonDoc, doc.c_str());
@@ -410,10 +407,8 @@ void setup() {
   }
   
   Serial.println("Connected to wifi");
-  Serial.println("\nStarting connection...");
   
-   // sensor
-  //dht.begin();
+  // sensor
   bool status = bme.begin(0x76);  
   if (!status) {
     Serial.println("Could not find a valid BME280 sensor, check wiring!");
@@ -443,7 +438,6 @@ void setup() {
 void loop() 
 {
   // inside
-
   inTemp = bme.readTemperature();
   inHum = bme.readHumidity();
   pressure = int(bme.readPressure() / 100.0F);
