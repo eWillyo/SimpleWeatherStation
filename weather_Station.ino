@@ -69,7 +69,7 @@ float feels_temp;
 //float temp_min;
 float dew_point;
 int pressure;
-int humidity;
+int outHum;
 float uvi;
 int visibility;
 float wind_Speed;
@@ -280,7 +280,7 @@ void dispFnc(void* parameter)
     // hum. out
     tft.setTextColor(TFT_NAVY);
     tft.setCursor(195,220);
-    main = String(humidity) + " %";
+    main = String(outHum) + " %";
     tft.println(main);
     tft.unloadFont();
     // main
@@ -490,7 +490,7 @@ void loop()
   outTemp = outData["current"]["temp"].as<float>();
   feels_temp = outData["current"]["feels_like"].as<float>();
   dew_point = outData["current"]["dew_point"].as<float>();
-  humidity = outData["current"]["humidity"].as<int>();
+  outHum = outData["current"]["humidity"].as<int>();
   uvi = outData["current"]["uvi"].as<float>();
   visibility = outData["current"]["visibility"].as<int>();
   wind_Speed = outData["current"]["wind_speed"].as<float>();
