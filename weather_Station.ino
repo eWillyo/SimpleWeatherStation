@@ -1,4 +1,4 @@
-// Simple weather station based on ESP32
+// Simple weather station based on ESP32 microcontroller
 // Source code by Vilém Pantlík
 
 #include <WiFi.h>
