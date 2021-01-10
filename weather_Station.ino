@@ -20,6 +20,7 @@ Adafruit_BME280 bme; // I2C
 // display
 #include <TFT_eSPI.h> // Hardware-specific library
 #include <SPI.h>
+// fonts
 #include "Consolas_24.h"
 #include "PhagsPa_18.h"
 
