@@ -1,6 +1,6 @@
 # SimpleWeatherStation
 
- Simple weather station is based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display. Weather station displays around 18 current weather values (like outside temperature, humidity, air pressure, dew point, wind speed and direction, UV index, sunrise/sunset ...) also temperature and humidity indoors via BME280 sensor, plus shows actual weather icon.
+ SimpleWeatherStation is based on ESP32. Most of all data are taken from "openweathermap.org" rest is taken from BME280 sensor. All text expressions are in Czech language. You can use your own language but you probably have to adjust text positions to fit correctly on display. Weather station displays around 18 current weather values (like outside temperature, humidity, air pressure, dew point, wind speed and direction, UV index, sunrise/sunset ...) also temperature and humidity indoors via BME280 sensor, plus shows actual weather icon.
  
  # Hardware requirements
  - BME280 sensor (5 volts version) [https://a.aliexpress.com/_msziJ2z]
