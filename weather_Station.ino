@@ -110,6 +110,19 @@ String getValue(String data, char separator, int index)
   return found>index ? data.substring(strIndex[0], strIndex[1]) : "";
 }
 
+String copyNChars(String data, int start, int chars)
+{
+  String copy;
+  
+  if ((start >= data.length()) || (start < 0))
+    return String("");
+  
+  for(int i=start, j=0; i<start+chars; i++, j++)
+    copy[j] = data[i];
+
+  return copy;
+}
+
 // https://stackoverflow.com/questions/7490660/converting-wind-direction-in-angles-to-text-words
 int windAngleToText(int angle)
 {
@@ -489,9 +502,8 @@ void loop()
   String war_desc = outData["alerts"]["description"].as<String>();
   war_start_utc = outData["alerts"]["start"].as<time_t>();
   war_stop_utc = outData["alerts"]["stop"].as<time_t>();
-
-  war_desc_split[0] = getValue(war_desc, '\n', 0);
-  war_desc_split[1] = getValue(war_desc, '\n', 1);
+  war_start_utc += timezone;
+  war_stop_utc += timezone;
 
   struct tm  ts;
   char buf[80];
@@ -501,14 +513,23 @@ void loop()
   ts = *localtime(&sunset_utc);
   strftime(buf, sizeof(buf), "%H:%M", &ts);
   sunset_text = String(buf);
-
-  ts = *localtime(&war_start_utc);
-  strftime(buf, sizeof(buf), "%H:%M", &ts);
-  war_start_text = String(buf);
-  ts = *localtime(&war_stop_utc);
-  strftime(buf, sizeof(buf), "%H:%M", &ts);
-  war_stop_text = String(buf);
+  //warning
+  if (war_event != String("null"))
+  {
+    String war_desc_temp = getValue(war_desc, '\n', 0);
+    war_desc_split[0] = copyNChars(war_desc_temp, 0, 20);
+    war_desc_split[1] = copyNChars(war_desc_temp, 20, 40);
   
+    //war_desc_split[0] = getValue(war_desc, '\n', 0);
+    //war_desc_split[1] = getValue(war_desc, '\n', 1);
+
+    ts = *localtime(&war_start_utc);
+    strftime(buf, sizeof(buf), "%H:%M", &ts);
+    war_start_text = String(buf);
+    ts = *localtime(&war_stop_utc);
+    strftime(buf, sizeof(buf), "%H:%M", &ts);
+    war_stop_text = String(buf);
+  }
   // icon
   char buff[100];
 
