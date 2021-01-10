@@ -104,6 +104,7 @@ String getValue(String data, char separator, int index)
   return found>index ? data.substring(strIndex[0], strIndex[1]) : "";
 }
 
+// https://stackoverflow.com/questions/7490660/converting-wind-direction-in-angles-to-text-words
 int windAngleToText(int angle)
 {
   int val=int((angle/22.5)+.5);
