@@ -133,8 +133,10 @@ unsigned char* loadPNG(const unsigned char* data, unsigned long length)
       Serial.println(upng_get_bpp(upng)); 
       if (upng_get_format(upng) == UPNG_RGBA8)
         Serial.println("OK..");
-      else
+      else {
         Serial.println("Bad format..");
+        return NULL;
+      }
 
       Serial.print("Size: ");
       icon_bmp_size = upng_get_size(upng);
@@ -154,7 +156,7 @@ void downloadWeatherIcon(const char* url)
   
   if (b == NULL)
   {
-    Serial.println("Chyba nacitani PNG!!!");
+    Serial.println("Error while loading PNG!!!");
     return;
   }
 
