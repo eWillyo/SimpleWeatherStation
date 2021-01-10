@@ -1,3 +1,6 @@
+// Simple weather station based on ESP32
+// Source code by Vilém Pantlík
+
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
