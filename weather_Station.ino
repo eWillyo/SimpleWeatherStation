@@ -13,7 +13,7 @@
 
 Adafruit_BME280 bme; // I2C
 
-#define MEASSURE_DELAY 5*60*1000
+#define MEASSURE_DELAY 5*60*1000 // should not exceed 1000 measures per day!
 #define DISPLAY_DELAY 2*60*1000
 #define START_DELAY 5000
 
@@ -32,10 +32,12 @@ TFT_eSprite weather_img = TFT_eSprite(&tft);
 
 #define BCK_COLOR TFT_OLIVE
 
+// edit this !!!
 float latitude = 49.010193;  // your city latitude!
 float longitude = 17.122532; // your city longitude!
 String place = "your-city";
 String openWeatherMapAPIKey = "your-open-weather-map-api-key";
+// edit this !!!
 
 String serverName = "http://api.openweathermap.org/data/2.5/onecall";
 String request_template = "?lat=%f&lon=%f&units=metric&lang=cz&exclude=minutely,hourly,daily&appid=%s";
@@ -46,8 +48,10 @@ upng_t* upng = NULL;
 uint16_t icon_bmp[IMG_WIDTH*IMG_HEIGHT];
 size_t icon_bmp_size = 0;
 
+// edit this !!!
 char ssid[] = "your-wifi-ssid";           //  your network SSID (name)
 char password[] = "your-wifi-password";   // your network password
+// edit this !!!
 
 float inTemp = 0.0;
 float inHum = 0.0;
