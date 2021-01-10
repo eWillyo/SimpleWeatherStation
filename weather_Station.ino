@@ -13,8 +13,8 @@
 
 Adafruit_BME280 bme; // I2C
 
-#define MEASSURE_DELAY 2*60*1000
-#define DISP_DELAY 1*60*1000
+#define MEASSURE_DELAY 4*60*1000
+#define DISP_DELAY 2*60*1000
 #define START_DELAY 5000
 
 // display
