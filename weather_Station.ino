@@ -444,7 +444,7 @@ void loop()
     
   if (isnan(inTemp) || isnan(inHum) || isnan(pressure)) 
   {
-    Serial.println("Chyba při čtení z DHT senzoru!");
+    Serial.println("Sensor reading error!");
     //delay(5000);
     //ESP.restart();
   }
