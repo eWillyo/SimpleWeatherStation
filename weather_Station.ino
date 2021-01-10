@@ -43,7 +43,7 @@ upng_t* upng = NULL;
 uint16_t icon_bmp[IMG_WIDTH*IMG_HEIGHT];
 size_t icon_bmp_size = 0;
 
-char ssid[] = "your-wifi-ssid";                //  your network SSID (name)
+char ssid[] = "your-wifi-ssid";           //  your network SSID (name)
 char password[] = "your-wifi-password";   // your network password
 
 float inTemp = 0.0;
