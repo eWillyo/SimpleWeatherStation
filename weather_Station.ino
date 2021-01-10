@@ -114,7 +114,7 @@ String copyNChars(String data, int start, int chars)
 {
   String copy;
   
-  if ((start >= data.length()) || (start < 0))
+  if ((start >= data.length()) || (start < 0) || ((start+chars+1) > data.length())
     return String("");
   
   for(int i=start, j=0; i<start+chars; i++, j++)
