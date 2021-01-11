@@ -260,7 +260,7 @@ void dispFnc(void* parameter)
     tft.loadFont(Consolas_24);
     tft.setCursor(10,10);
     // place
-    String main = place + String(",");
+    String main = place;
     tft.println(main);
     // temp. in
     tft.setTextColor(TFT_RED);
