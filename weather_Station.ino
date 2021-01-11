@@ -334,7 +334,7 @@ void dispFnc(void* parameter)
     else { // warning
       tft.setTextColor(TFT_RED);
       tft.setCursor(120,110);
-      main = war_event + String(" (") + war_start_text + String(" - ") + war_stop_text + String(")");
+      main = war_event + String(" (") + war_start_text + String("-") + war_stop_text + String(")");
       tft.println(main);
       // warning description
       tft.setTextColor(TFT_WHITE);
