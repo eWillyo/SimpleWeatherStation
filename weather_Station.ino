@@ -16,6 +16,7 @@ Adafruit_BME280 bme; // I2C
 #define MEASSURE_DELAY 5*60*1000 // should not exceed 1000 measures per day!
 #define DISPLAY_DELAY 2*60*1000
 #define START_DELAY 5000
+#define PRERESET_DELAY 5000
 
 // display
 #include <TFT_eSPI.h> // Hardware-specific library
@@ -228,7 +229,7 @@ void dispFnc(void* parameter)
       tft.loadFont(Consolas_24);
       tft.setCursor(65,120);
       tft.println("Chyba WiFi..");
-      delay(5000);
+      delay(PRERESET_DELAY);
       ESP.restart();
     }
     // display data..
@@ -410,7 +411,7 @@ void setup() {
 
       tft.setCursor(65,120);
       tft.println("Chyba WiFi..");
-      delay(5000);
+      delay(PRERESET_DELAY);
       ESP.restart();
     }
   }
@@ -426,7 +427,7 @@ void setup() {
 
     tft.setCursor(65,120);
     tft.println("Chyba čidla..");
-    delay(5000);
+    delay(PRERESET_DELAY);
     ESP.restart();
   }
 
