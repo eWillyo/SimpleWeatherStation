@@ -25,7 +25,6 @@ Adafruit_BME280 bme; // I2C
 #include "PhagsPa_18.h"
 
 TFT_eSPI tft = TFT_eSPI();       // Invoke custom library
-TFT_eSprite weather_img = TFT_eSprite(&tft);
 
 #define IMG_WIDTH 100
 #define IMG_HEIGHT 100
