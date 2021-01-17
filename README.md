@@ -49,7 +49,7 @@ For this project I've created "Consolas_24" and "PhagsPa_18" fonts with support 
               //Insert byte array here
           };
         
-Finally, don't forget to include this file in your project and also change font names in source code.
+Finally, don't forget to include this file in your project and change font names in source code.
   
 # Installation
 Open this project in Arduino IDE and don't forget to change your board to "ESP32 Dev Module" and also set correct COM port number in Tools menu. You will probably need to change Partition scheme to "No OTA (2MB APP/2MB SPIFFS)", then in code change "latitude" and "longitude" variables to your city coordinates. Change "place" variable to name of your city. You will also need API key ("openWeatherMapAPIKey" variable) from [https://openweathermap.org] (don't worry, registration is FREE with limitation of 1000 requests per day). Also don't forget to change your WiFi SSID and password (variables: "ssid" and "password"). Then try to upload code to your ESP32. And that's it, enjoy!
