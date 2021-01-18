@@ -120,6 +120,9 @@ int windAngleToText(int angle)
 
 unsigned char* loadPNG(const unsigned char* data, unsigned long length)
 {
+  if (upng != NULL)
+      upng_free(upng);
+  
   upng = upng_new_from_bytes(data, length);
   if (upng != NULL) 
   {
@@ -162,9 +165,6 @@ void downloadWeatherIcon(const char* url)
   }
 
   Bitmap2DispClr(b, BCK_COLOR, icon_bmp_size);
-
-  if (upng != NULL)
-      upng_free(upng);
 }
 
 String httpGETRequest(const char* serverName) {
